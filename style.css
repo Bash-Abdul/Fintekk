@@ -5,3 +5,76 @@
     text-decoration: none;
     transition: all .2s linear;
 }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.header{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    top: 0; left: 0; right: 0; */
+    box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
+}
+
+.navbar a{
+    margin: 0 3rem;
+    font-size: 1.3rem;
+    color:#171717;
+}
+
+.signin_signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.btn{
+    background: #2E5CFF;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+}
+
+
+.main_container{
+    display: grid;
+    grid-template-columns: repeat(2, 40% 60%);
+    gap: 4rem;
+    align-items: center;
+}
+
+.main_content{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main_content h2{
+    font-size: 3.5rem;
+    color: #172E80;
+    line-height: 1.5;
+}
+.main_content p{
+    font-size: 1.3rem;
+    color: #777777;
+    line-height: 1;
+    padding: 1rem 0;
+}
+.main_image img{
+    height: 50rem;
+}
