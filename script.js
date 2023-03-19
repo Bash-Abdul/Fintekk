@@ -1,3 +1,10 @@
+let menu = document.querySelector('.menu');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', function(){
+    navbar.classList.toggle('active')
+})
+
 const faqs = document.querySelectorAll('.faq_container');
 
 faqs.forEach(faq => { 
