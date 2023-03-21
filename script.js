@@ -5,6 +5,13 @@ menu.addEventListener('click', function(){
     navbar.classList.toggle('active')
 })
 
+window.onscroll = function(){
+    if (window.scrollY > 50){
+        navbar.classList.remove('active');
+    }
+}
+
+
 const faqs = document.querySelectorAll('.faq_container');
 
 faqs.forEach(faq => { 

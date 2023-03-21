@@ -79,9 +79,8 @@ header{
 }
 
 .menu{
-    height: 3rem;
-    width: 3rem;
-    background: #2E5CFF;
+    font-size: 3rem;
+    color: #2E5CFF;
     display: none;
 }
 
@@ -269,37 +268,33 @@ header{
 .faq{
     width: 100%;
     background: #2E5CFF;
-    height: 60rem;
+    height: 50rem;
     max-height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.faq_image{
-    background: white;
-    height: 100%;
-    background: #FBFBFB;
-    background-position: center;
-    /* background: url(images/pana.png) no-repeat; */
-}
-.faq_image img{
-    display: grid;
-    place-items: center;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-}
+
 
 .faqs{
     max-height: 100%;
-    display: flex;
+    /* display: flex;
     gap: 1rem;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    /* display: flex;
+    justify-content: center; */
+    /* background: pink; */
+
+    display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: center; */
+    justify-content: center;
+}
+.faq_image{
+    background: url(images/pana.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: #FBFBFB;
+    height: 100%;
 }
 .faqs h3{
     font-size: 5rem;
@@ -544,6 +539,8 @@ footer{
     .brand{
         width: 100%;
     }
+
+  
 }
 
 @media (max-width:990px) {
@@ -558,6 +555,10 @@ footer{
         grid-template-columns: 1fr;
         text-align: center;
         place-content: center;
+    }
+
+    .main_container h2{
+        font-size: 3.8rem
     }
 
 
@@ -586,7 +587,7 @@ footer{
         background: #fff;
         background: #2E5CFF;
         width: 100%;
-        margin-left: -70rem;
+        margin-left: -100rem;
         transition: all 1s linear;
     }
     .navbar.active{
@@ -702,5 +703,9 @@ footer{
     }
     .footer_container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright span{
+        font-size: 1.3rem;
     }
 }
