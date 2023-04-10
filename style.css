@@ -91,13 +91,14 @@ header{
 }
 
 .main_container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    align-items: center; */
+    display: flex;
     align-items: center;
-    /* display: flex;
-    align-items: center;
-    gap: 2rem; */
+    gap: 3rem;
+    justify-content: center;
 }
 
 .main_content{
@@ -110,7 +111,8 @@ header{
     /* border: .1rem solid red; */
 }
 .main_image img{
-    object-fit: contain;
+    /* object-fit: contain; */
+    width: 40vw;
 }
 
 .main_content h2{
@@ -125,6 +127,7 @@ header{
     padding: 2rem 0;
     line-height: 1.5;
     font-weight: 300;
+    width: 80%;
 }
 
 
@@ -551,12 +554,6 @@ footer{
         width: 95%;
     }
 
-    .main_container{
-        grid-template-columns: 1fr;
-        text-align: center;
-        place-content: center;
-    }
-
     .main_container h2{
         font-size: 3.8rem
     }
@@ -615,10 +612,16 @@ footer{
     }
 
     .main_container{
-        grid-template-columns: 1fr;
-        text-align: center;
+       flex-direction: column;
     }
 
+    .main_image img{
+        width: 70vw;
+    }
+
+    .main_content{
+        text-align: center;
+    }
     .main_container h2{
         font-size: 3.5rem;
     }
@@ -632,9 +635,7 @@ footer{
         justify-content: center;
         flex-direction: column;
     }
-    /* .main_image{
-        display: none;
-    } */
+   
 
     .brand{
         width: 100%;
